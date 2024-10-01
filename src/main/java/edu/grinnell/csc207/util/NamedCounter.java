@@ -3,7 +3,7 @@ package edu.grinnell.csc207.util;
 /**
  * Counters that have names.
  */
-public class NamedCounter extends BasicCounter {
+public class NamedCounter extends DecrementableCounter {
   /**
    * The name associated with the counter.
    */
@@ -19,7 +19,7 @@ public class NamedCounter extends BasicCounter {
    */
   public NamedCounter(String counterName, int start) {
     super(start);
-    this.name = counterName;
+    //System.err.printf("NamedCounter(%s, %d)\n", name, start); 
   } // NamedCounter(String, int)
 
    /**
